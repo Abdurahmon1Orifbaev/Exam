@@ -131,3 +131,19 @@ STATICFILES_DIRS = BASE_DIR / 'assets',
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+ACCOUNT_ACTIVATION_DAYS = 7
+LOGIN_URL = 'accounts:login'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'abdurahmonorifboev291gmail.com'
+EMAIL_HOST_PASSWORD = 'fztq juxb vijl vynw'
+
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAI = EMAIL_HOST_USER
